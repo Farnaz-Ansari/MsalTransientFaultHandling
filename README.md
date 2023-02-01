@@ -7,7 +7,7 @@ A custom strongly-type HttpClient is created that implements `IMsalHttpClientFac
 Using this custom http client, during dependency injection registration, we can tail our own delegating handlers alongside Polly policies to intercept outgoing requests to MSAL.
 
 ## Caching
-A custom IDistributedCache implementation is implemented to persist MSAL tokens to Redis.
+A Distributed Cache is implemented to persist MSAL tokens to Redis.
 
 ```csharp
 var msalApiClient = sp.GetRequiredService<IMsalHttpClientFactory>();
