@@ -1,6 +1,6 @@
 ## Overview
 Proposes a way to implement Transient Fault Handling policies around MSAL calls to build resilient applications with Polly.
-Implement retries for HTTP error codes 400-600 or intermittent errors caused by Azure Active Directory Pass-through Authentication.
+Implements retries for HTTP error codes 400-600 or intermittent errors caused by Azure Active Directory Pass-through Authentication.
 
 ## HttpClientFactory
 A custom strongly-type HttpClient is created that implements `IMsalHttpClientFactory`.
